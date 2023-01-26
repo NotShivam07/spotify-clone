@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+body{
+    background-color: rgba(180, 255, 180, 0.92);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubantu',sans-serif;
+    height: 90px;
+    background-color: black;
+    color: white;
+    padding: 0 5px;
+    display: flex;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 19px;
+}
+nav ul li{
+    padding:5px 20px;
+    font-size: 1.5rem;
+}
+#search{
+    position: absolute;
+    right: 0;
+    margin: 25px 50px;
+    height: 25px;
+    width: 200px;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: 8px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.container{
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display: flex;
+    margin: 25px auto;
+    width: 75%;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url('bg.jpg') ;
+}
+.bottom{
+    background-color: black;
+    color: white;
+    position: sticky;
+    bottom: 0;/* Ye krne se ye bottom pe nhi jayega iske liye pehle mujhe container ko height deni hogi(ya mai usko min height bhi de skta hun) */
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*mai isko bina flex bnaye text-align use krke bhi center lr skta hun */
+    align-items: center;
+}
+.icons i{
+    padding: 6px;
+    cursor: pointer;
+}
+#myProgressBar{
+    /* margin: 5px 0; */
+    width: 80vw;
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    /* width: 90%; */
+    color: black;
+    margin: 20px 0;
+    padding: 4px;
+    border-radius: 24px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+}
+.songItem img{
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0px 10px;
+}
+.timestamp i{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    font-size: 1.2rem;
+    font-family: 'Varela Round',sans-serif;
+}
+.songNameInfo{
+    position: absolute;
+    left: 20vw;
+    font-size: 1.2rem;
+    font-family: 'Varela Round',sans-serif;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
